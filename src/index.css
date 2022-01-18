@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Montserrat:wght@100;200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.App {
+  width: min(1000px, 100vw);
+  margin: 0px auto;
+  background-color: rgb(255, 241, 243);
+  padding-bottom: 50px;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  padding: 5px 50px;
+  background-color: white;
+}
+
+nav > h1 {
+  font-family: "Corinthia", cursive;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(252, 150, 167);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 50px 0 70px 0;
+}
+label {
+  margin: 0 30px;
+  padding: 8px 20px;
+  background-color: limegreen;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #333;
+  border: 2px solid limegreen;
+}
+label:hover {
+  border: 2px solid limegreen;
+  color: limegreen;
+  background-color: transparent;
+  transition: 200ms;
+}
+button {
+  float: right;
+  margin: 0 30px;
+  border: 2px solid rgb(255, 72, 72);
+
+  padding: 8px 20px;
+  background-color: rgb(255, 72, 72);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button:hover {
+  border: 2px solid rgb(255, 72, 72);
+  color: rgb(255, 72, 72);
+  background-color: transparent;
+  transition: 200ms;
+}
+.progress-bar-outer {
+  width: 80%;
+  height: 9px;
+  border: 2px solid pink;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 40px auto;
+  position: relative;
+}
+
+.progress-bar-inner {
+  height: 5px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 5px;
+  background-color: rgb(255, 173, 173);
+}
+
+.picture-grid {
+  display: grid;
+  width: 95%;
+  margin: 100px auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 10px;
+}
+
+.picture-grid img {
+  width: 100%;
+}
+.error-msg {
+  margin: 20px auto 0px auto;
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 2rem;
+    margin: 30px 0 50px 0;
+  }
+  label {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+  button {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+  .picture-grid {
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+  }
+  .progress-bar-outer {
+    margin: 20px auto;
+  }
+}
